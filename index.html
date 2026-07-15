@@ -89,6 +89,20 @@
   .m-card h4{font-family:"Noto Serif KR",serif;font-size:20px;font-weight:800;margin:0 0 8px;color:var(--green-d)}
   .m-card p{color:var(--ink-soft);font-size:14px;margin:0 0 14px;min-height:40px}
   .m-card .price{display:inline-block;font-weight:800;color:var(--ochre-d);background:var(--cream);border:1px dashed var(--ochre);border-radius:20px;padding:4px 13px;font-size:13.5px}
+  /* 남해 바다 정식 */
+  .jeongsik{display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center}
+  .js-photos{display:grid;gap:12px}
+  .js-photos img{width:100%;border-radius:16px;object-fit:cover;box-shadow:var(--shadow);aspect-ratio:16/10}
+  .js-info h3{font-family:"Noto Serif KR",serif;font-size:clamp(24px,3vw,34px);color:var(--green-d);margin:0 0 12px}
+  .js-info>p{color:#4a4335;font-size:15.5px;margin:0 0 22px}
+  .price-tiers{display:grid;gap:10px;margin-bottom:16px}
+  .price-tiers .tier{display:flex;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 22px;box-shadow:var(--shadow-s)}
+  .price-tiers .ppl{font-weight:800;color:var(--green-d);font-size:16px}
+  .price-tiers .pw{font-family:"Noto Serif KR",serif;font-weight:900;font-size:23px;color:var(--ochre-d)}
+  .price-tiers .pw em{font-style:normal;font-size:14px;font-weight:700;margin-left:2px}
+  .season{color:var(--ink-soft);font-size:14px;font-weight:600;background:var(--cream);border:1px dashed var(--ochre);border-radius:10px;padding:11px 15px;margin:0}
+  .gallery .gimg{background-size:cover;background-position:center}
+  @media(max-width:920px){.jeongsik{grid-template-columns:1fr;gap:22px}.js-photos{grid-template-columns:1fr 1fr}}
 
   /* 직접 담근 장 */
   .jang{background:linear-gradient(120deg,var(--green-dd),var(--green));color:#fff}
@@ -202,7 +216,7 @@
           <h2 style="margin-bottom:0">남해 농가맛집, 어부림</h2>
         </div>
         <h3 class="serif">남해 바다가 키운 재료로,<br>정성껏 차린 한 상</h3>
-        <p>어부림은 청정 남해 삼동면에 자리한 농가맛집입니다. 남해에서 나는 신선한 재료와, 어부림이 직접 콩을 삶아 담근 된장·쌈장으로 차린 정갈한 백반 한 상을 냅니다.</p>
+        <p>어부림은 청정 남해 삼동면에 자리한 농가맛집입니다. 남해에서 나는 신선한 해산물과, 어부림이 직접 콩을 삶아 담근 된장·쌈장으로 차린 정갈한 남해 바다 정식을 냅니다.</p>
         <p>화려하진 않아도 매일 먹어 속 편한 집밥 — 남해에 오시면 꼭 한 번 맛보셔야 할 정갈한 밥상입니다.</p>
         <div class="badge-row">
           <span class="chip">🏅 농촌진흥청 지정 농가맛집</span>
@@ -211,9 +225,7 @@
         </div>
         <div class="sign serif">— 남해 삼동, 어부림</div>
       </div>
-      <div class="pic">
-        <div class="ph"><span class="em">🍚</span>어부림 백반 한 상<br><small style="font-weight:500;opacity:.8">사진 자리 (실제 사진으로 교체)</small></div>
-      </div>
+      <div class="pic"><img src="images/jeongsik_table.jpg" alt="남해 바다 정식 한 상" style="width:100%;height:100%;object-fit:cover"></div>
     </div>
   </div>
 </section>
@@ -223,25 +235,26 @@
   <div class="wrap">
     <div class="sec-head">
       <span class="tag">MENU</span>
-      <h2>어부림 대표 메뉴</h2>
-      <p>남해 제철 재료로 차린 정갈한 한 상</p>
+      <h2>남해 바다 정식</h2>
+      <p>청정 남해의 제철 해산물로 차린 어부림의 대표 상차림</p>
       <div class="divider"></div>
     </div>
-    <div class="menu-grid">
-      <div class="m-card">
-        <div class="thumb t-baekban">🍚<span class="ph">사진 자리</span></div>
-        <div class="body"><h4>어부림 백반 정식</h4><p>직접 담근 장과 남해 제철 나물·해산물로 차린 정갈한 한 상</p><span class="price">가격 문의</span></div>
+    <div class="jeongsik">
+      <div class="js-photos">
+        <img src="images/jeongsik_table.jpg" alt="남해 바다 정식 한 상 전체" loading="lazy">
+        <img src="images/jeongsik_plate.jpg" alt="남해 바다 정식 모둠 (전복·장어·문어·생선구이)" loading="lazy">
       </div>
-      <div class="m-card">
-        <div class="thumb t-eel">🐟<span class="ph">사진 자리</span></div>
-        <div class="body"><h4>장어구이</h4><p>담백하게 구워낸 장어에 어부림 양념을 더한 보양 한 끼</p><span class="price">가격 문의</span></div>
-      </div>
-      <div class="m-card">
-        <div class="thumb t-bulgogi">🥩<span class="ph">사진 자리</span></div>
-        <div class="body"><h4>불고기 백반</h4><p>달큰하게 재운 불고기와 집밥 반찬이 함께 나오는 한 상</p><span class="price">가격 문의</span></div>
+      <div class="js-info">
+        <h3 class="serif">남해 바다 정식</h3>
+        <p>전복·장어·문어·생선구이 등 남해 제철 해산물과 정갈한 반찬이 어우러진 어부림의 대표 한 상입니다.</p>
+        <div class="price-tiers">
+          <div class="tier"><span class="ppl">2인</span><span class="pw">62,000<em>원</em></span></div>
+          <div class="tier"><span class="ppl">3인</span><span class="pw">90,000<em>원</em></span></div>
+          <div class="tier"><span class="ppl">4인</span><span class="pw">120,000<em>원</em></span></div>
+        </div>
+        <p class="season">🍃 계절에 따라 구성은 조금씩 달라집니다.</p>
       </div>
     </div>
-    <p style="text-align:center;color:var(--ink-soft);font-size:13.5px;margin-top:24px">※ 메뉴·가격은 예시입니다. 실제 메뉴판·가격·사진을 주시면 그대로 반영합니다.</p>
   </div>
 </section>
 
@@ -266,18 +279,18 @@
     <div class="sec-head">
       <span class="tag">GALLERY</span>
       <h2>어부림의 하루</h2>
-      <p>남해의 풍경과 어부림의 한 상 <span style="color:var(--ochre-d);font-weight:700">· 사진 자리(실제 사진으로 교체)</span></p>
+      <p>남해의 풍경과 어부림의 한 상</p>
       <div class="divider"></div>
     </div>
     <div class="gallery">
-      <div class="g g1">🌊<span>남해 앞바다</span></div>
+      <a class="g gimg" href="#menu" style="background-image:url('images/jeongsik_table.jpg')"><span>남해 바다 정식</span></a>
       <div class="g g2">🌾<span>텃밭</span></div>
-      <div class="g g3">🍚<span>백반 한 상</span></div>
+      <a class="g gimg" href="#menu" style="background-image:url('images/jeongsik_plate.jpg')"><span>모둠 한 상</span></a>
       <div class="g g4">🫙<span>장독대</span></div>
       <div class="g g5">🏡<span>어부림 외관</span></div>
       <div class="g g6">🥢<span>반찬</span></div>
+      <div class="g g1">🌊<span>남해 앞바다</span></div>
       <div class="g g7">⛰️<span>남해 풍경</span></div>
-      <div class="g g8">🔥<span>장어구이</span></div>
     </div>
   </div>
 </section>
