@@ -9,13 +9,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@500;600;700;900&display=swap" rel="stylesheet">
 <style>
   :root{
-    --green:#33623f; --green-d:#22412b; --green-dd:#182e1e;
-    --ochre:#c0873a; --ochre-d:#9a6a26;
-    --ocean:#2f7d8e;
-    --cream:#f6efe1; --cream2:#fbf7ee;
-    --ink:#2a2318; --ink-soft:#6a6152;
-    --line:#e6dcc7; --card:#fff;
-    --shadow:0 14px 36px rgba(34,49,28,.13); --shadow-s:0 5px 16px rgba(34,49,28,.09);
+    --green:#103a57; --green-d:#0b2c43; --green-dd:#071e2e;
+    --ochre:#c9a24b; --ochre-d:#a67f2c;
+    --ocean:#2e6e8c;
+    --cream:#f5f1e9; --cream2:#fbf8f1;
+    --ink:#16303c; --ink-soft:#5a6a74;
+    --line:#e4ddce; --card:#fff;
+    --shadow:0 14px 36px rgba(11,44,67,.14); --shadow-s:0 5px 16px rgba(11,44,67,.09);
   }
   *{box-sizing:border-box} html,body{margin:0;padding:0}
   body{font-family:"Noto Sans KR","Malgun Gothic",system-ui,sans-serif;color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased;line-height:1.6}
@@ -42,8 +42,8 @@
 
   /* 히어로 */
   .hero{position:relative;overflow:hidden;color:#fff;height:clamp(460px,62vw,640px)}
-  .hero .scene{position:absolute;inset:0;background:#182e1e url('images/jeongsik_table.jpg') center/cover}
-  .hero .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,40,26,.55),rgba(20,40,26,.4) 45%,rgba(20,40,26,.88))}
+  .hero .scene{position:absolute;inset:0;background:#071e2e url('images/jeongsik_table.jpg') center/cover}
+  .hero .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,30,46,.5),rgba(7,30,46,.38) 45%,rgba(7,30,46,.9))}
   .hero .inner{position:relative;z-index:3;max-width:1160px;margin:0 auto;padding:0 24px;height:100%;display:flex;flex-direction:column;justify-content:center}
   .hero .kicker{display:inline-block;align-self:flex-start;font-size:14px;letter-spacing:2px;font-weight:700;color:var(--green-dd);background:var(--ochre);padding:6px 15px;border-radius:30px;margin-bottom:18px}
   .hero h1{font-family:"Noto Serif KR",serif;font-size:clamp(32px,5.4vw,60px);line-height:1.25;margin:0 0 16px;font-weight:900;text-shadow:0 4px 22px rgba(0,0,0,.45)}
@@ -69,7 +69,7 @@
   .story .txt h3{font-family:"Noto Serif KR",serif;font-size:clamp(22px,2.6vw,30px);color:var(--green-d);margin:0 0 18px;line-height:1.4}
   .story .txt p{color:#4a4335;font-size:15.5px;margin:0 0 14px}
   .story .txt .sign{font-family:"Noto Serif KR",serif;color:var(--ochre-d);font-weight:700;margin-top:20px}
-  .story .pic{position:relative;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3;background:linear-gradient(145deg,#dfe6cf,#a7b98a)}
+  .story .pic{position:relative;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3;background:linear-gradient(145deg,#d9e3ec,#a7bccd)}
   .story .pic .ph{position:absolute;inset:0;display:grid;place-items:center;color:rgba(34,49,28,.5);font-weight:700;font-size:15px;text-align:center;gap:6px}
   .story .pic .ph .em{font-size:54px}
   .badge-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
@@ -118,15 +118,15 @@
   .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
   .gallery .g{aspect-ratio:1/1;border-radius:14px;position:relative;display:grid;place-items:center;color:rgba(34,49,28,.5);font-weight:700;font-size:32px;overflow:hidden}
   .gallery .g span{position:absolute;bottom:8px;font-size:11px;color:rgba(0,0,0,.4);background:rgba(255,255,255,.7);padding:2px 8px;border-radius:14px}
-  .g1{background:linear-gradient(145deg,#bcd0d8,#7fa2a6)} .g2{background:linear-gradient(145deg,#dfe6cf,#a7b98a)}
-  .g3{background:linear-gradient(145deg,#e7ddc2,#c7b487)} .g4{background:linear-gradient(145deg,#e2c7a6,#bb8f5f)}
-  .g5{background:linear-gradient(145deg,#cdd8c0,#8fa878)} .g6{background:linear-gradient(145deg,#d9c3a0,#b08a53)}
-  .g7{background:linear-gradient(145deg,#b7cdd6,#6f9aa0)} .g8{background:linear-gradient(145deg,#e3b5a0,#b06a4c)}
+  .g1{background:linear-gradient(145deg,#cfe0ea,#8fb0c4)} .g2{background:linear-gradient(145deg,#e8e0cd,#c9b98f)}
+  .g3{background:linear-gradient(145deg,#dbe4ec,#a3bccc)} .g4{background:linear-gradient(145deg,#e2d6bf,#bda37a)}
+  .g5{background:linear-gradient(145deg,#d3dde7,#93aabf)} .g6{background:linear-gradient(145deg,#e6ddc9,#bfa87f)}
+  .g7{background:linear-gradient(145deg,#c4d5e0,#7fa0b5)} .g8{background:linear-gradient(145deg,#cfe0ea,#8fb0c4)}
 
   /* 오시는 길 */
   .visit{background:var(--cream2)}
   .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px}
-  .map-ph{border-radius:20px;overflow:hidden;position:relative;min-height:320px;background:linear-gradient(160deg,#cfe0dd,#9fbfb5);display:grid;place-items:center;text-align:center;color:var(--green-d);box-shadow:var(--shadow-s)}
+  .map-ph{border-radius:20px;overflow:hidden;position:relative;min-height:320px;background:linear-gradient(160deg,#d5e2ec,#9fb8ca);display:grid;place-items:center;text-align:center;color:var(--green-d);box-shadow:var(--shadow-s)}
   .map-ph .pin{font-size:46px}
   .map-ph a{margin-top:12px;display:inline-block;background:#fff;color:var(--green-d);font-weight:800;padding:10px 20px;border-radius:30px;border:1px solid var(--line)}
   .info-list{display:flex;flex-direction:column;gap:2px}
