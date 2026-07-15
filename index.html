@@ -118,6 +118,7 @@
   .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
   .gallery .g{aspect-ratio:1/1;border-radius:14px;position:relative;display:grid;place-items:center;color:rgba(34,49,28,.5);font-weight:700;font-size:32px;overflow:hidden}
   .gallery .g span{position:absolute;bottom:8px;font-size:11px;color:rgba(0,0,0,.4);background:rgba(255,255,255,.7);padding:2px 8px;border-radius:14px}
+  .gallery .g.feat{grid-column:span 2;aspect-ratio:2/1}
   .g1{background:linear-gradient(145deg,#cfe0ea,#8fb0c4)} .g2{background:linear-gradient(145deg,#e8e0cd,#c9b98f)}
   .g3{background:linear-gradient(145deg,#dbe4ec,#a3bccc)} .g4{background:linear-gradient(145deg,#e2d6bf,#bda37a)}
   .g5{background:linear-gradient(145deg,#d3dde7,#93aabf)} .g6{background:linear-gradient(145deg,#e6ddc9,#bfa87f)}
@@ -281,13 +282,12 @@
     </div>
     <div class="gallery">
       <div class="g gimg" style="background-image:url('images/eobulim_exterior.jpg')"><span>어부림 외관</span></div>
-      <div class="g gimg" style="background-image:url('images/hyeonsumak.jpg')"><span>🏆 경남요리대상 수상</span></div>
+      <div class="g gimg feat" style="background-image:url('images/hyeonsumak.jpg')"><span>🏆 경남요리대상 수상</span></div>
       <div class="g gimg" style="background-image:url('images/jangdok.jpg')"><span>직접 담근 장독</span></div>
       <div class="g gimg" style="background-image:url('images/gochu_drying.jpg')"><span>붉은 고추 건조</span></div>
       <div class="g gimg" style="background-image:url('images/dogil_night.jpg')"><span>남해 독일마을</span></div>
       <div class="g gimg" style="background-image:url('images/gochu_field.jpg')"><span>남해 텃밭</span></div>
       <div class="g gimg" style="background-image:url('images/dogil_gate.jpg')"><span>독일마을 입구</span></div>
-      <div class="g gimg" style="background-image:url('images/beer_sausage.jpg')"><span>독일마을 감성</span></div>
     </div>
   </div>
 </section>
